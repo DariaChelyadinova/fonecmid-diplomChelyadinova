@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="37e900d0-eb8e-4b95-88d2-5d6b09f8a4b7">
+  <producedTypes>
+    <managerType typeId="0a92bcab-20d1-446a-829e-f5729411f85c" valueTypeId="8b69a939-c668-4228-bb8a-ccccc9c35425"/>
+    <valueManagerType typeId="ddf8a4ac-bd2a-4f33-a339-bd2d98e9038c" valueTypeId="b145a209-f8d7-401e-8ea6-0cef47d5f8bc"/>
+    <valueKeyType typeId="9d0aba87-af1c-4e03-a371-66d7b1a3d057" valueTypeId="a8d5950c-3423-4294-9355-cf3c5f0c69c0"/>
+  </producedTypes>
+  <name>BKM_ТокенУправленияТБотом</name>
+  <synonym>
+    <key>ru</key>
+    <value>Токен управления т ботом</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>300</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

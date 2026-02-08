@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5f117fec-2f72-485c-b99d-995a9d8b2e69">
+  <producedTypes>
+    <objectType typeId="9efd6696-fa73-430e-be01-07da6820904e" valueTypeId="ccf7e507-7c9c-4d93-9a59-c3d663c7f9d2"/>
+    <refType typeId="8f14a6bd-2ce7-420b-be8d-38e3d3cbcb44" valueTypeId="5c984bfa-dbff-4a80-bd5b-96fca8e3e7dd"/>
+    <selectionType typeId="ec3d4435-1adc-4fe5-b969-146a02a85f94" valueTypeId="bf4b3b80-1520-4848-87b5-102ae08c5f9d"/>
+    <listType typeId="410f6d5c-1417-4721-9a1e-6972dab6dd5b" valueTypeId="1e8f1bff-dc29-4bb6-b0b8-c4d4ce80e38d"/>
+    <managerType typeId="d6d19826-2edc-482f-9621-e3f4ea89af68" valueTypeId="ba3a88a6-0c5f-4e44-bd0f-72dfcb65f6b4"/>
+  </producedTypes>
+  <name>ВКМ_НачислениеЗаработнойПлаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начисление заработной платы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ВКМ_НачислениеЗаработнойПлаты.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Начисление заработной платы</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Начисления заработной платы</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ВКМ_НачислениеЗаработнойПлаты.Form.ФормаДокумента</defaultObjectForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecords>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</registerRecords>
+  <registerRecords>CalculationRegister.ВКМ_ОсновныеНачисления</registerRecords>
+  <registerRecords>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы</registerRecords>
+  <registerRecords>CalculationRegister.ВКМ_Удержания</registerRecords>
+  <registerRecords>CalculationRegister.ВКМ_ДополнительныеНачисления</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="4ea3bd7d-d10e-44e3-9c2a-a79e818a76b2">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="80224cdb-8aba-46ed-94e7-bfb092fede18">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="35dc6b6f-775e-44a9-bade-6e1f93124566">
+    <producedTypes>
+      <objectType typeId="aa2f5263-5e8f-4145-ae9d-099f67d6ed75" valueTypeId="365df9b7-6efe-4b09-bf7f-7234c11966c1"/>
+      <rowType typeId="ac3193cc-03c4-4e55-8270-101d3c15a656" valueTypeId="2bde97c7-18eb-4a3e-9fc1-00acec49f752"/>
+    </producedTypes>
+    <name>ОсновныеНачисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основные начисления</value>
+    </synonym>
+    <attributes uuid="7e38b7c0-b5b7-4eee-9646-c914e05c3595">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВКМ_Сотрудники</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="11a25c5e-1aa6-4805-974a-12cb540f567e">
+      <name>ВидРасчета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид расчета</value>
+      </synonym>
+      <type>
+        <types>ChartOfCalculationTypesRef.ВКМ_ОсновныеНачисления</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9f692869-c46c-4dca-9e53-bdeaca3b2ffe">
+      <name>ДатаНачала</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата начала</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="207c17cf-1cf4-48a2-ac4b-cff17d621473">
+      <name>ДатаОкончания</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата окончания</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="61a7c0af-6c8b-40de-82b0-719b11fa5de6">
+      <name>ГрафикРаботы</name>
+      <synonym>
+        <key>ru</key>
+        <value>График работы</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВКМ_ГрафикРабот</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="5d9d4262-3e26-4631-a526-40e018e8ede5">
+    <producedTypes>
+      <objectType typeId="8791bd86-6da3-4fb8-a216-10d2a5677919" valueTypeId="3104c37d-0f8d-4cf3-beaf-523820da2ba6"/>
+      <rowType typeId="6b5a4921-141f-4021-889b-66a9e0d80359" valueTypeId="03a8c128-f9e5-4f4f-abe2-b3c8d1776937"/>
+    </producedTypes>
+    <name>ДополнительныеНачисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные начисления</value>
+    </synonym>
+    <attributes uuid="1a5e5f7a-4c0c-4a71-8124-60537250d333">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВКМ_Сотрудники</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6b2f9a58-e77f-4932-a4e1-96af2eaf92bb">
+      <name>СуммаНачисления</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма начисления</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ВКМ_Сумма</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5c358449-831e-4bda-82a2-d6f9384d466a">
+      <name>НачисленоЧасов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Начислено часов</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ВКМ_Часы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

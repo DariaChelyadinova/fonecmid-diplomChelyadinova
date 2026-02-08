@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8aaca2be-969c-4e93-9c99-d5a773281d72">
+  <producedTypes>
+    <objectType typeId="f759d156-53db-4900-8120-df4bb13324d3" valueTypeId="514b0f74-1a8e-460d-9512-ad4a072fc5a5"/>
+    <refType typeId="0f55200f-8de2-44ba-a42d-488b84461762" valueTypeId="669b7faf-9084-4c74-a264-315b5244520f"/>
+    <selectionType typeId="939a73db-97d6-4cc0-8895-5b6fc92d4ab7" valueTypeId="34115eef-633e-4d7c-9c3f-1bdd200fbf9b"/>
+    <listType typeId="d6e4ff7b-e99d-46c5-937d-e6527a0362e5" valueTypeId="5326bbc7-7775-4ecf-936a-14f9ac415e5d"/>
+    <managerType typeId="c8a07405-e7aa-4472-879b-8099eaeff2dd" valueTypeId="a065d72b-50fa-45f8-a28a-f1563f2707fa"/>
+  </producedTypes>
+  <name>ВКМ_ГрафикОтпусков</name>
+  <synonym>
+    <key>ru</key>
+    <value>График отпусков</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ВКМ_ГрафикОтпусков.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>График отпусков</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Графики отпусков</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ВКМ_ГрафикОтпусков.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>InformationRegister.ВКМ_СведенияОбОтпусках</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="d21362a3-8eb7-4c9c-b39c-9bb24d19106a">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6f610d51-b944-41aa-9374-cb299eb3170c">
+    <name>Год</name>
+    <synonym>
+      <key>ru</key>
+      <value>Год</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="a5737f1b-ce9f-4eba-8c6e-e01d781d3d5f">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f5659dbd-1112-43eb-8036-e4b863a669f6">
+    <name>АнализГрафика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Анализ графика</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="1040a28a-bcb6-4a09-813d-1668cd726f27">
+    <producedTypes>
+      <objectType typeId="070a00ac-ae7f-46b3-a7f7-52dacba6f2a7" valueTypeId="a2dcd870-a083-4760-aa2d-7c3bb931dd50"/>
+      <rowType typeId="190cad76-23d2-4a00-a628-0a607be83bd6" valueTypeId="3e20d714-51eb-4d28-8ed5-efb352b5f362"/>
+    </producedTypes>
+    <name>ОтпускаСотрудников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отпуска сотрудников</value>
+    </synonym>
+    <attributes uuid="f3a89a9b-0f9a-4ed0-95c7-c016b9577d2b">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВКМ_Сотрудники</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="718e8290-3a5a-4931-9417-7a963c2216b0">
+      <name>ДатаНачала</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата начала</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="febdf472-e30c-4682-a1b3-0a1197384732">
+      <name>ДатаОкончания</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата окончания</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="43163cb7-4371-45c9-b802-63d732b39e19">
+      <name>ОбщаяПродолжительностьОтпуска</name>
+      <synonym>
+        <key>ru</key>
+        <value>Общая продолжительность отпуска</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="337e5eab-6235-4f6c-871a-3347dbcf7db0">
+  <name>ВКМ_ОбслуживаниеКлиентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с заявками клиентов</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.ДоговорыКонтрагентов</content>
+  <content>Document.ВКМ_ОбслуживаниеКлиента</content>
+  <content>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы</content>
+  <content>Catalog.ВКМ_ОбслуживаниеКлиентаПрисоединенныеФайлы</content>
+  <content>Constant.BKM_НоменклатураАбонентскаяПлата</content>
+  <content>Constant.BKM_НоменклатураРаботыСпециалиста</content>
+  <content>DataProcessor.ВКМ_МассовоеСозданиеАктов</content>
+  <parentSubsystem>Subsystem.ВКМ_ОбслуживаниеКлиентов</parentSubsystem>
+</mdclass:Subsystem>

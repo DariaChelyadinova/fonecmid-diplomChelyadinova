@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CalculationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bcadef89-dac5-42a6-a61c-7a757dfb1916">
+  <producedTypes>
+    <selectionType typeId="581e103e-541c-4168-aeb3-b6b4f3892d32" valueTypeId="be5c94ab-ec8d-4204-a485-fc2ac8c77cb0"/>
+    <listType typeId="6843cd84-258f-4d46-8cc2-7070d09daf6a" valueTypeId="0d55e19a-86bc-4ff8-b5ce-3b660a7bd127"/>
+    <managerType typeId="e68b542b-88b2-47b9-849e-dfd99bab8f5c" valueTypeId="ce4f88ab-b7a9-4bf5-a0f4-84233f9426e9"/>
+    <recordSetType typeId="cd4d2fc5-b980-4e33-aef7-adcecebac7fd" valueTypeId="862c64e4-54b3-435d-8da8-a864d88ae74f"/>
+    <recordKeyType typeId="4d741e80-5b20-4f71-badd-95b8afe18e03" valueTypeId="67fbb840-cfcf-4404-81c4-77aeba9a9c8a"/>
+    <recordType typeId="027665bd-c889-4da6-ace6-9c54a28b5478" valueTypeId="0bb71c81-2ab9-4b67-99df-2b9d676c4cf3"/>
+    <recalcsType typeId="e131d018-81fb-4709-9702-32948f9e576f" valueTypeId="f7972fab-68f8-4ca0-8f0f-2b3d253d9c79"/>
+  </producedTypes>
+  <name>ВКМ_Удержания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удержания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <periodicity>Month</periodicity>
+  <basePeriod>true</basePeriod>
+  <chartOfCalculationTypes>ChartOfCalculationTypes.ВКМ_Удержания</chartOfCalculationTypes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="47bff352-1172-4bfc-8459-a446ec700554">
+    <name>Результат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ВКМ_Сумма</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="6226c1c4-2829-4bc6-9b95-08a8d3ba47ed">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВКМ_Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+</mdclass:CalculationRegister>
