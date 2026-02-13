@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="62f57b8c-66bf-47f0-8daf-82cb1caddbcd">
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="62f57b8c-66bf-47f0-8daf-82cb1caddbcd">
   <producedTypes>
     <objectType typeId="a91da2aa-e592-4902-90af-bf2f2565ab12" valueTypeId="245829aa-366d-4b65-974e-257e4c3db4dd"/>
     <refType typeId="080ebebc-2c28-4f7c-9342-3cdde6171dd1" valueTypeId="f64ad233-285f-427b-a8f8-eeb3f5226aa7"/>
@@ -10,7 +10,7 @@
   <name>ВКМ_ГрафикРабот</name>
   <synonym>
     <key>ru</key>
-    <value>График работ</value>
+    <value>График работ(справочник)</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Catalog.ВКМ_ГрафикРабот.StandardAttribute.Code</inputByString>
@@ -36,6 +36,15 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="48644381-f128-4b8c-833c-14bd5413d4c9">
+      <name>ОтпускКалендарныеДни</name>
+      <description>Отпуск календарные дни</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
 </mdclass:Catalog>

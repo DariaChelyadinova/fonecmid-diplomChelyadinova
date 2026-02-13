@@ -112,7 +112,9 @@
       </synonym>
       <type>
         <types>Date</types>
-        <dateQualifiers/>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -127,7 +129,9 @@
       </synonym>
       <type>
         <types>Date</types>
-        <dateQualifiers/>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -180,7 +184,11 @@
         <value>Сумма начисления</value>
       </synonym>
       <type>
-        <types>DefinedType.ВКМ_Сумма</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>14</precision>
+          <scale>2</scale>
+        </numberQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -194,7 +202,12 @@
         <value>Начислено часов</value>
       </synonym>
       <type>
-        <types>DefinedType.ВКМ_Часы</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

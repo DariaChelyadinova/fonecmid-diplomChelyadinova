@@ -44,8 +44,8 @@
   <baseCalculationTypes>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления</baseCalculationTypes>
   <predefined>
     <items id="8fffd1cc-63ea-464e-901e-dad7b4717198">
-      <name>СуммаПремии</name>
-      <description>Сумма премии</description>
+      <name>ПремияПроцентом</name>
+      <description>Премия процентом</description>
       <code xsi:type="core:StringValue">
         <value>00001</value>
       </code>

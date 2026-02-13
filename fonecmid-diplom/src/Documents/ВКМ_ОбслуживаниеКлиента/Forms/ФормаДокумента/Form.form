@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:form="http://g5.1c.ru/v8/dt/form">
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
   <items xsi:type="form:FormGroup">
     <name>ГруппаСтраницы</name>
     <id>66</id>
@@ -119,7 +119,7 @@
         </extInfo>
       </items>
       <items xsi:type="form:FormGroup">
-        <name>ГруппаЛевоПраво</name>
+        <name>ГруппаДанные</name>
         <id>80</id>
         <items xsi:type="form:FormGroup">
           <name>ГруппаШапкаЛево</name>
@@ -204,46 +204,6 @@
               <textEdit>true</textEdit>
             </extInfo>
           </items>
-          <items xsi:type="form:FormField">
-            <name>ВКМ_Специалист</name>
-            <id>90</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>Объект.Специалист</segments>
-            </dataPath>
-            <extendedTooltip>
-              <name>ВКМ_СпециалистРасширеннаяПодсказка</name>
-              <id>92</id>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <contextMenu>
-              <name>ВКМ_СпециалистКонтекстноеМеню</name>
-              <id>91</id>
-              <autoFill>true</autoFill>
-            </contextMenu>
-            <type>InputField</type>
-            <editMode>Enter</editMode>
-            <showInHeader>true</showInHeader>
-            <headerHorizontalAlign>Left</headerHorizontalAlign>
-            <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:InputFieldExtInfo">
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <wrap>true</wrap>
-              <chooseType>true</chooseType>
-              <typeDomainEnabled>true</typeDomainEnabled>
-              <textEdit>true</textEdit>
-            </extInfo>
-          </items>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -265,7 +225,7 @@
           </extendedTooltip>
           <type>UsualGroup</type>
           <extInfo xsi:type="form:UsualGroupExtInfo">
-            <group>Vertical</group>
+            <group>AlwaysHorizontal</group>
             <behavior>Auto</behavior>
             <showLeftMargin>true</showLeftMargin>
             <united>true</united>
@@ -276,6 +236,45 @@
         <items xsi:type="form:FormGroup">
           <name>ГруппаШапкаПраво</name>
           <id>93</id>
+          <items xsi:type="form:Decoration">
+            <name>ПланированиеВыполненияРабот</name>
+            <id>109</id>
+            <title>
+              <key>ru</key>
+              <value>&lt;colorstyle -46>Планирование выполнения работ&lt;/></value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>ПланированиеВыполненияРаботРасширеннаяПодсказка</name>
+              <id>111</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ПланированиеВыполненияРаботКонтекстноеМеню</name>
+              <id>110</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <formatted>true</formatted>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <font xsi:type="core:FontRef">
+              <font>Style.NormalTextFont</font>
+              <height>18.0</height>
+            </font>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </items>
           <items xsi:type="form:FormField">
             <name>ВКМ_ДатаПроведенияРабот</name>
             <id>95</id>
@@ -316,20 +315,132 @@
               <textEdit>true</textEdit>
             </extInfo>
           </items>
+          <items xsi:type="form:FormGroup">
+            <name>времяработа</name>
+            <id>107</id>
+            <items xsi:type="form:FormField">
+              <name>ВКМ_ВремяНачалаРабот</name>
+              <id>98</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Объект.ВремяНачалаРабот</segments>
+              </dataPath>
+              <extendedTooltip>
+                <name>ВКМ_ВремяНачалаРаботРасширеннаяПодсказка</name>
+                <id>100</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ВКМ_ВремяНачалаРаботКонтекстноеМеню</name>
+                <id>99</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>InputField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:InputFieldExtInfo">
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <wrap>true</wrap>
+                <chooseType>true</chooseType>
+                <typeDomainEnabled>true</typeDomainEnabled>
+                <textEdit>true</textEdit>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormField">
+              <name>ВКМ_ВремяОкончанияРабот</name>
+              <id>101</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Объект.ВремяОкончанияРабот</segments>
+              </dataPath>
+              <extendedTooltip>
+                <name>ВКМ_ВремяОкончанияРаботРасширеннаяПодсказка</name>
+                <id>103</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ВКМ_ВремяОкончанияРаботКонтекстноеМеню</name>
+                <id>102</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>InputField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:InputFieldExtInfo">
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <wrap>true</wrap>
+                <chooseType>true</chooseType>
+                <typeDomainEnabled>true</typeDomainEnabled>
+                <textEdit>true</textEdit>
+              </extInfo>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Времяработа</value>
+            </title>
+            <extendedTooltip>
+              <name>времяработаРасширеннаяПодсказка</name>
+              <id>108</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>UsualGroup</type>
+            <extInfo xsi:type="form:UsualGroupExtInfo">
+              <group>AlwaysHorizontal</group>
+              <behavior>Auto</behavior>
+              <showLeftMargin>true</showLeftMargin>
+              <united>true</united>
+              <throughAlign>Auto</throughAlign>
+              <currentRowUse>Auto</currentRowUse>
+            </extInfo>
+          </items>
           <items xsi:type="form:FormField">
-            <name>ВКМ_ВремяНачалаРабот</name>
-            <id>98</id>
+            <name>ВКМ_Специалист</name>
+            <id>90</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
               <common>true</common>
             </userVisible>
             <dataPath xsi:type="form:DataPath">
-              <segments>Объект.ВремяНачалаРабот</segments>
+              <segments>Объект.Специалист</segments>
             </dataPath>
             <extendedTooltip>
-              <name>ВКМ_ВремяНачалаРаботРасширеннаяПодсказка</name>
-              <id>100</id>
+              <name>ВКМ_СпециалистРасширеннаяПодсказка</name>
+              <id>92</id>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -338,8 +449,8 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ВКМ_ВремяНачалаРаботКонтекстноеМеню</name>
-              <id>99</id>
+              <name>ВКМ_СпециалистКонтекстноеМеню</name>
+              <id>91</id>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
@@ -357,19 +468,19 @@
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>ВКМ_ВремяОкончанияРабот</name>
-            <id>101</id>
+            <name>СтатусЗаявки</name>
+            <id>112</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
               <common>true</common>
             </userVisible>
             <dataPath xsi:type="form:DataPath">
-              <segments>Объект.ВремяОкончанияРабот</segments>
+              <segments>Объект.СтатусЗаявки</segments>
             </dataPath>
             <extendedTooltip>
-              <name>ВКМ_ВремяОкончанияРаботРасширеннаяПодсказка</name>
-              <id>103</id>
+              <name>СтатусЗаявкиРасширеннаяПодсказка</name>
+              <id>114</id>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -378,8 +489,8 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ВКМ_ВремяОкончанияРаботКонтекстноеМеню</name>
-              <id>102</id>
+              <name>СтатусЗаявкиКонтекстноеМеню</name>
+              <id>113</id>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
@@ -432,10 +543,10 @@
         </userVisible>
         <title>
           <key>ru</key>
-          <value>Группа лево право</value>
+          <value>Группа данные</value>
         </title>
         <extendedTooltip>
-          <name>ГруппаЛевоПравоРасширеннаяПодсказка</name>
+          <name>ГруппаДанныеРасширеннаяПодсказка</name>
           <id>81</id>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
@@ -446,7 +557,7 @@
         </extendedTooltip>
         <type>UsualGroup</type>
         <extInfo xsi:type="form:UsualGroupExtInfo">
-          <group>AlwaysHorizontal</group>
+          <group>Vertical</group>
           <behavior>Auto</behavior>
           <showLeftMargin>true</showLeftMargin>
           <united>true</united>

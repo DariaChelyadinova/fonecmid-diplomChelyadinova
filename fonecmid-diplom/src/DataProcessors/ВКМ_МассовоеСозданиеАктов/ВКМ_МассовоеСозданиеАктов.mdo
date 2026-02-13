@@ -28,10 +28,10 @@
       <objectType typeId="776905cd-556c-4547-8810-5a0843d65410" valueTypeId="63cb1bd2-0ae7-466d-b55d-197e5f8b1221"/>
       <rowType typeId="482c6285-bc0c-4637-9598-4c5eab53f7ea" valueTypeId="1f8a3916-8b1d-48f1-8f8e-5ffb19049c79"/>
     </producedTypes>
-    <name>СписокДоговорПоРеализациям</name>
+    <name>СписокДоговоровИРеализаций</name>
     <synonym>
       <key>ru</key>
-      <value>Список договор по реализациям</value>
+      <value>Список договоров и реализаций</value>
     </synonym>
     <attributes uuid="2e65e87e-b85b-4bf3-be36-e37659a53068">
       <name>Договор</name>

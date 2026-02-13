@@ -53,7 +53,7 @@
       <common>true</common>
     </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>Объект.СписокДоговорПоРеализациям</segments>
+      <segments>Объект.СписокДоговоровИРеализаций</segments>
     </dataPath>
     <titleLocation>None</titleLocation>
     <items xsi:type="form:FormField">
@@ -65,7 +65,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.СписокДоговорПоРеализациям.LineNumber</segments>
+        <segments>Объект.СписокДоговоровИРеализаций.LineNumber</segments>
       </dataPath>
       <extendedTooltip>
         <name>СписокДоговорПоРеализациямНомерСтрокиРасширеннаяПодсказка</name>
@@ -101,7 +101,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.СписокДоговорПоРеализациям.Договор</segments>
+        <segments>Объект.СписокДоговоровИРеализаций.Договор</segments>
       </dataPath>
       <extendedTooltip>
         <name>СписокДоговорПоРеализациямДоговорРасширеннаяПодсказка</name>
@@ -141,7 +141,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.СписокДоговорПоРеализациям.Реализация</segments>
+        <segments>Объект.СписокДоговоровИРеализаций.Реализация</segments>
       </dataPath>
       <extendedTooltip>
         <name>СписокДоговорПоРеализациямРеализацияРасширеннаяПодсказка</name>
